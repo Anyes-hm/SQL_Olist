@@ -8,7 +8,6 @@ Le dataset contient des informations sur les clients, les commandes, les produit
 La structure des fichiers dans ce projet est la suivante :
 
 ```bash
-Copier le code
 /Olist_SQL_Project
 |-- script.sql               # Script pour créer les tables et les contraintes
 |-- script.py                # Script Python pour remplir les tables
@@ -81,22 +80,19 @@ Ce dossier contient les fichiers CSV des différentes tables. Chaque fichier cor
 Pour cloner le dépôt, utilisez la commande suivante :
 
 ```bash
-Copier le code
-git clone <URL_DU_REPO>
+git clone https://github.com/Anyes-hm/SQL_Olist.git
 ```
 ### Créer la base de données :
 
 Exécutez le script SQL script.sql sur votre serveur de base de données pour créer les tables nécessaires.
 
-sql
-Copier le code
+```bash
 \i script.sql
 Remplir la base de données :
-
+```
 Exécutez le script Python script.py pour charger les données des fichiers CSV dans les tables correspondantes. Assurez-vous que le fichier CSV se trouve dans le dossier olist_dataset/.
 
 ```bash
-Copier le code
 python script.py
 Exécuter les requêtes :
 
